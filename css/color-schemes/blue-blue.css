@@ -1,0 +1,195 @@
+/* ================================= Color Scheme - S Blue ================================= */
+/* BLUE*/
+
+/* Background  */
+
+.blue-bg{
+	background-color:#36c9f2;
+}
+
+/* Text */
+.blue{
+	color:#3cc7ee;
+}
+
+/* Border Colors */
+.border{
+	border-color:#3cc7ee;
+}
+
+
+/* LIGHT BLUE*/
+
+/* Background  */
+
+.l-blue-bg,
+.image-effect-bottom,
+.side-arrow,
+.pagination > li > a:hover,
+.pagination > .active > a, 
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.reply,
+.contact-btn,
+.pricing-table h3,
+.down-arrow{
+	background-color:#3cb497;
+}
+
+/* Text */
+.l-blue,
+.pricing-table .color,
+.sub span,
+.navbar-left.nav  > li:hover > a,
+.navbar-left.nav li.active a,
+.price-column .btn:hover{
+	color:#3cb497;
+}
+
+
+/* Border Colors */
+
+.navbar-left.nav li:hover, 
+.navbar-left.nav li.active{
+	border-color:#3cb497;
+}
+
+
+/* DARK BLUE*/
+
+/* Background  */
+
+.d-blue-bg,
+.carousel-indicators .active,
+.carousel-indicators  li:hover,
+.trainer,
+.image-effect-top,
+.slider-btn,
+.highlight h3,
+.highlight .down-arrow{
+	background-color:#36c9f2;
+}
+
+/* Text */
+.d-blue,
+.highlight .color,
+.member span,
+.stats i,
+.highlight .btn:hover,
+.posted-date,
+.member i,
+.search .fa,
+.widget a:hover,
+.post-item h2 a:hover,
+.post-content h5 a:hover,
+.comment-meta .user-name{
+	color:#3cc7ee;
+}
+
+/* Border Colors */
+.border{
+	border-color:#3cc7ee;
+}
+
+
+
+
+/*------------- GREEN -----------------*/
+
+/*  Background */
+
+.green-bg{
+	background-color:#9ac928;
+}
+
+/* Text */
+
+.green{
+	color:#9ac928;
+}
+
+
+
+
+
+/*------------- LIGHT GREEN -----------------*/
+
+/*  Background */
+
+.l-green-bg{
+	background-color:#bed500;
+}
+
+/* Text */
+
+.l-green{
+	color:#bed500;
+}
+
+
+
+
+/*----------- PINK ----------------*/
+/*  Background */
+
+
+.pink-bg{
+	background-color:#d34160;
+}
+/* Text */
+
+.pink{
+color:#d34160;
+}
+
+
+
+
+/*------------  Violet  -------------*/
+
+/*  Background */
+
+.violet-bg{
+	background-color:#754dae;
+}
+
+/* Text */
+
+.violet{
+	color:#754dae;
+}
+
+
+
+
+/*-----------  Orange  --------------*/
+
+/*  Background */
+
+.orange-bg{
+	background-color:#fda700;
+}
+
+/* Text */
+
+.orange{
+	color:#fda700;
+}
+
+
+
+/*--------------  White  -------------------*/
+
+/*  Background */
+
+.white-bg{
+	color:#ffffff;
+}
+
+/* Text */
+
+.white{
+	color:#ffffff;
+}
+
+
