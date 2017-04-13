@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Title and Meta Tags Begins -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<title>Fitness Project</title>    
+	<!-- Title and Meta Tags Ends -->	
+	
+	<!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400italic,400,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+	
+	<!-- CSS Begins -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/flaticon.css" rel="stylesheet" type="text/css"/>
+  	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<!-- Color Panel -->
+    <link href="css/color_panel.css" rel="stylesheet" type="text/css" /> 
+	<!-- Skin Colors -->
+	<link href="css/color-schemes/blue-green.css" id="changeable-colors" rel="stylesheet" type="text/css" /> 
+	<!-- CSS Ends -->	
+	
+</head>
+
+    
+    <!-- Color Switcher -->
+	<section id="theme-panel" class="close-theme-panel">
+		<!--Panel Button -->
+		<a class="panel-button dark"><i class="fa fa-gear fa-spin"></i></a>
+		<div class="segment ">
+			<h4 class="dark condensed semibold uppercase no-margin no-padding">Color Skins</h4>
+		</div>		
+		<!-- Colors -->
+		<div class="segment">			
+			<a title="blue-green" class="switcher"><div class="blue-box"></div><div class="green-box"></div></a>
+			<a title="orange-violet" class="switcher"><div class="violet-box"></div><div class="orange-box"></div></a>
+			<a title="green-pink" class="switcher"><div class="l-green-box"></div><div class="pink-box"></div></a>
+			<a title="blue-blue" class="switcher"><div class="l-blue-box"></div><div class="d-blue-box"></div></a>
+		</div>
+	</section><!-- End Color Switcher -->
+    
+	<!-- Script Begins -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	   	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script> 
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>	
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/color-panel.js"></script>
+	<!-- Script Ends -->
+	
+</body>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	
+	<!-- jPut core JavaScript -->
+	<script src="js/jput.min.js"></script>
+	 
+	<script>	
+	$(document).ready(function(){
+		//your json data for initial load
+		var json=[{"name":"Gym Name 1","link":"http://google.com","description":"Initial data"},{"name":"Gym Name 2","link":"bing.com"}];
+		
+		//loading json data initally 
+		$('#list_div').jPut({
+			jsonData:json, 	//json
+			name:'list' 	//jPut name
+		});	
+		
+		//on click loading json from file & appending
+		$('#load_more').click(function(){
+				//jPut Code
+				$('#list_div').jPut({
+					ajax_url:'data.json',
+					name:'list'
+				});		
+		});
+		
+
+	});
+	</script>	
+	</head>
+
+  <body>
+      
+	  <div class="page-header">
+        <h1>List gyms</h1>
+      </div>
+	  
+       <a id="load_more" href="#list">Click Here to JSON via $.GET & Append (data.json)</a><br/>
+	   
+		
+        <div id="list_div">
+		
+		<!-- Creating a jPut template --> 
+		  <!-- while rendering the json data {{link}}  will be replced with the json data value. -->	
+          <div class="list-group" jPut="list">
+            <a href="{{link}}" target="_blank" class="list-group-item">
+              <h4 class="list-group-item-heading">{{name}}</h4>
+			  <!-- if 'description' is empty or if its not there we can put a default value -->
+              <p class="list-group-item-text">{{description||No Description}}</p>
+            </a>
+          </div>
+		  
+        </div>
+
+
+	
+
+</body>
+<script src="js/Storage.js"></script>
+<link rel="stylesheet" href="css/StorageStyle.css">
+<div>
+<br>
+</div>
+<body onload="doShowAll()">
+	<h3>Enter Items And Quantity to buy</h3
+	<br>
+	<form name=ShoppingList>
+
+		<div id="PlayArea">
+			<table>
+				<tr>
+
+					<td><b>Item:</b><input type=text name=name></td>
+					<td><b>Quantity:</b><input type=text name=data></td>
+
+				</tr>
+
+				<tr>
+					<td>
+					    <input type=button value="Save"   onclick="SaveItem()"> 
+					    <input type=button value="Modify" onclick="ModifyItem()"> 
+					    <input type=button value="Remove" onclick="RemoveItem()">
+					  </td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="items_table">
+			<h2>Shopping List</h2>
+			<table id=list></table>
+			<p>
+				<label><input type=button value="Clear" onclick="ClearAll()">
+					<i>* Removes all items</i></label>
+			</p>
+		</div>
+	</form>
+
+</body>
+
+
+
+</html>
