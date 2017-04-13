@@ -1,0 +1,161 @@
+/* ================================= Color Scheme - S Blue ================================= */
+/* BLUE*/
+
+/* Background  */
+
+.blue-bg{
+	background-color:#36c9f2;
+}
+
+/* Text */
+.blue{
+	color:#3cc7ee;
+}
+
+/* Border Colors */
+.border{
+	border-color:#3cc7ee;
+}
+
+
+
+
+
+/*------------- GREEN -----------------*/
+
+/*  Background */
+
+.green-bg{
+	background-color:#9ac928;
+}
+
+/* Text */
+
+.green{
+	color:#9ac928;
+}
+
+
+
+
+
+/*------------- LIGHT GREEN -----------------*/
+
+/*  Background */
+
+.l-green-bg,
+.image-effect-bottom,
+.side-arrow,
+.pagination > li > a:hover,
+.pagination > .active > a, 
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.reply,
+.contact-btn,
+.pricing-table h3,
+.down-arrow{
+	background-color:#bed500;
+}
+
+/* Text */
+
+.l-green,
+.pricing-table .color,
+.sub span,
+.navbar-left.nav  > li:hover > a,
+.navbar-left.nav li.active a,
+.price-column .btn:hover{
+	color:#bed500;
+}
+
+/* Border Colors */
+
+.navbar-left.nav li:hover, 
+.navbar-left.nav li.active{
+	border-color:#bed500;
+}
+
+
+
+/*----------- PINK ----------------*/
+/*  Background */
+
+
+.pink-bg,
+.carousel-indicators .active,
+.carousel-indicators  li:hover,
+.trainer,
+.image-effect-top,
+.slider-btn,
+.highlight h3,
+.highlight .down-arrow{
+	background-color:#d34160;
+}
+/* Text */
+
+.pink,
+.highlight .color,
+.member span,
+.stats i,
+.highlight .btn:hover,
+.posted-date,
+.member i,
+.search .fa,
+.widget a:hover,
+.post-item h2 a:hover,
+.post-content h5 a:hover,
+.comment-meta .user-name{
+color:#d34160;
+}
+
+
+
+
+/*------------  Violet  -------------*/
+
+/*  Background */
+
+.violet-bg{
+	background-color:#754dae;
+}
+
+/* Text */
+
+.violet{
+	color:#754dae;
+}
+
+
+
+
+/*-----------  Orange  --------------*/
+
+/*  Background */
+
+.orange-bg{
+	background-color:#fda700;
+}
+
+/* Text */
+
+.orange{
+	color:#fda700;
+}
+
+
+
+/*--------------  White  -------------------*/
+
+/*  Background */
+
+.white-bg{
+	color:#ffffff;
+}
+
+/* Text */
+
+.white{
+	color:#ffffff;
+}
+
+
